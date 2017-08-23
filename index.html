@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src='http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
+    
+
+    <title>Disappearing Ninja</title>
+
+    <script>
+        $(document).ready(function () {
+
+            $('img').click(function(){
+                $(this).css('display','none');
+            })
+
+            $('button').click(function(){
+                $('img').css('display', 'inline');
+            })
+        })
+
+</script>
+
+<style>
+        body {
+            font-family: 'Helvetica', Arial, sans-serif;
+            width: 90%;
+            margin: 0px auto;
+            padding: 30px;
+            text-align: center;
+        }
+
+        #picture{
+            width: 200px;
+            height: 200px;
+            border: 1px solid #2b485d;
+            border-radius: 5px;
+            display: inline-block;
+            margin: 10px;
+            box-shadow: 5px 5px 10px #888;
+            vertical-align: top;
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            display: 
+        }
+
+        button {
+            width: 200px;
+            height: 100px;
+            font-size: 16px;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #0081c4;
+            border-radius: 15px;
+            margin: 20px;
+            border: 5px outset #55a3c1;
+
+        }
+
+</style>
+
+
+
+</head>
+<body>
+        <h1>jQuery – Assignment: Disappearing Ninjas</h1>
+        <div id="picture"><img src="ninjapic.jpg"></div>
+        <div id="picture"><img src="ninjapic.jpg"></div>
+        <div id="picture"><img src="ninjapic.jpg"></div>
+        <div id="picture"><img src="ninjapic.jpg"></div>
+        <div id="picture"><img src="ninjapic.jpg"></div>
+        <div id="picture"><img src="ninjapic.jpg"></div>
+        <div id="picture"><img src="ninjapic.jpg"></div>
+        <div id="picture"><img src="ninjapic.jpg"></div>
+
+        <button type='button'>RESET NINJAS</button>
+        
+        
+</body>
+</html>
